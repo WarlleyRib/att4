@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Criação de Personagem</title>
+</head>
+
+<body bgcolor="black">
+    <hr>
+    <h1 align="center"><font color="white">Criação de Personagem</font></h1>
+    <hr>
+    <table align="center" bordercolor="silver" bgcolor="LIGHTgray">
+        <tr>
+            <td>
+                <fieldset>
+                    <form action="enviar.php" method="post" name="personagem"></form>
+                    <table>
+                        <!-- Nome_personagem -->
+                        <tr>
+                            <td><label>Nickname:</label></td>
+                            <td><input type="text" name="Nome_personagem" id="Nome_personagem"
+                                    placeholder="nome para personagem" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>ID:</label></td>
+                            <td><input type="number" name="id_p" id="id_p" placeholder="Identificação de usuário"
+                                    required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <fieldset>
+                    <form action="enviar.php" method="post" name="escolha_personagem"></form>
+                    <table>
+                        <!-- SEXO -->
+                        <tr>
+                            <td><label>Sexo:</label></td>
+                            <td><input type="radio" name="sexo" id="sexo" value="Masculino" required>Masculino</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="radio" name="sexo" id="sexo" value="Feminino" required>Feminino</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><hr></td>
+                        </tr>
+
+                        <!-- Classe -->
+                        <tr>
+                            <td rowspan="4"><label>Classe:</label></td>
+                            <td><input type="radio" name="classe" id="classe" value="Arqueiro">Arqueiro</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="classe" id="classe" value="Guerreiro">Guerreiro</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="classe" id="classe" value="Mago">Mago</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="classe" id="classe" value="Ferreiro">Ferreiro</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><hr></td>
+                        </tr>
+
+                        <!-- Caracterisca do personagem -->
+                        <tr>
+                            <td><label>Olhos:</label></td>
+                            <td><input type="color" name="olhos" id="olhos"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Pele:</label></td>
+                            <td><input type="color" name="pele" id="pele"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Cabelo:</label></td>
+                            <td><input type="color" name="cabelo" id="cabelo"></td>
+                        </tr>
+
+                        <tr><td colspan="4" align="right"><button><a href="carregar/loading.html">Enviar</a></button></td></tr>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

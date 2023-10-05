@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Conta</title>
+</head>
+
+<body bgcolor="black" background="img/cor.gif">
+    <font color="white" align="center">
+    <hr size="3" color="black">
+    <h1>Cadastro para Iniciar Jogo</h1>
+    <hr size="3" color="black">
+    <table align="center" bgcolor="gray" bordercolor="black" cellpadding="10" cellspacing="10">
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Cadastro Pessoal</legend>
+                    <form action="enviar.php" method="post" name="cadastro">
+                        <table cellpadding="5" cellspacing="5">
+                            <!-- Nome -->
+                            <tr>
+                                <td><label>Nome:</label></td>
+                                <td><input type="text" name="nome" id="nome" placeholder="Nome de acesso" required>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" align="center"><hr></td>
+                            </tr>
+                            <!-- E-mail -->
+                            <tr>
+                                <td rowspan="2"><label>E-mail:</label></td>
+                                <td><input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" name="confirmar_email" id="confirmar_email"
+                                        placeholder="Digite novamente" required></td>
+                            </tr>
+                            <!-- Senha -->
+                            <tr>
+                                <td colspan="3" align="center"><hr></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2"><label>Senha:</label></td>
+                                <td><input type="password" name="senha" id="senha" placeholder="Digite uma Senha"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" name="confirmar_senha" id="confirmar_senha"
+                                        placeholder="Digite novamente" required></td>
+                            </tr>
+                            <!-- Enviar -->
+                            <tr>
+                                <tr><td><input type="checkbox" name="aceitar" id="aceitar" required> Aceitar Termos</td></tr>
+
+                                <td></td>
+                                <td align="right"><button><a href="Cadastro/cadastro.html">Enviar</a></button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+    </font>
+</body>
+
+</html>
